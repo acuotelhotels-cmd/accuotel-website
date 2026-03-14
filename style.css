@@ -1,0 +1,214 @@
+/* GENERAL */
+
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4f4f4;
+color:#333;
+}
+
+/* HEADER */
+
+header{
+position:fixed;
+top:0;
+width:100%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 40px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+color:white;
+z-index:1000;
+}
+
+.logo{
+font-family:'Playfair Display',serif;
+font-size:26px;
+letter-spacing:1px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-size:14px;
+transition:0.3s;
+}
+
+nav a:hover{
+color:#c9a227;
+}
+
+/* HERO SECTION */
+
+.hero{
+height:100vh;
+background:url("images/lavish1.jpg") center/cover no-repeat;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+color:white;
+}
+
+.hero h1{
+font-family:'Playfair Display',serif;
+font-size:60px;
+margin:0;
+}
+
+.hero p{
+font-size:20px;
+margin:15px 0;
+}
+
+/* BUTTON */
+
+.btn{
+background:#c9a227;
+padding:12px 35px;
+color:white;
+text-decoration:none;
+border-radius:4px;
+font-size:15px;
+transition:0.3s;
+}
+
+.btn:hover{
+background:#a8841c;
+}
+
+/* SECTIONS */
+
+.section{
+padding:80px 30px;
+text-align:center;
+}
+
+.section h2{
+font-family:'Playfair Display',serif;
+font-size:36px;
+margin-bottom:20px;
+}
+
+/* HOTEL CARDS */
+
+.hotel-grid{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:30px;
+margin-top:40px;
+}
+
+.hotel-card{
+background:white;
+width:280px;
+border-radius:10px;
+overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,0.15);
+transition:0.3s;
+}
+
+.hotel-card:hover{
+transform:translateY(-10px);
+}
+
+.hotel-card img{
+width:100%;
+height:180px;
+object-fit:cover;
+}
+
+.hotel-card h3{
+font-family:'Playfair Display',serif;
+margin-top:10px;
+}
+
+.hotel-card a{
+display:inline-block;
+margin:10px;
+padding:10px 20px;
+background:#c9a227;
+color:white;
+text-decoration:none;
+border-radius:4px;
+}
+
+/* ROOM GALLERY */
+
+.room-gallery{
+display:flex;
+flex-wrap:wrap;
+gap:20px;
+justify-content:center;
+margin-top:30px;
+}
+
+.room-gallery img{
+width:260px;
+border-radius:8px;
+transition:0.3s;
+}
+
+.room-gallery img:hover{
+transform:scale(1.05);
+}
+
+/* CONTACT SECTION */
+
+.contact{
+background:#111;
+color:white;
+padding:60px 20px;
+text-align:center;
+}
+
+.contact p{
+margin:10px 0;
+}
+
+/* WHATSAPP BUTTON */
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+padding:16px 18px;
+border-radius:50%;
+color:white;
+font-size:22px;
+text-decoration:none;
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+color:white;
+text-align:center;
+padding:20px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:38px;
+}
+
+.hotel-grid{
+flex-direction:column;
+align-items:center;
+}
+
+nav{
+display:none;
+}
+
+}
