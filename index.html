@@ -1,86 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Accuotel Hotels | Premium Hotels in Indore</title>
-
-<meta name="description" content="Accuotel Hotels offers premium hotels in Vijay Nagar Indore near CHL Hospital with luxury rooms and best price booking.">
-
-<style>
+<!DOCTYPE html><html lang="en">
+<head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1"><title>Accuotel Hotels | Premium Hotels in Indore</title><meta name="description" content="Accuotel Hotels - Premium hotel chain in Indore offering luxury rooms and comfortable stay near Vijay Nagar and CHL Hospital."><link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet"><style>
 
 body{
 margin:0;
-font-family:Arial;
-background:#f5f5f5;
+font-family:Poppins;
+background:#f4f4f4;
+scroll-behavior:smooth;
 }
 
 header{
 background:#111;
 color:white;
-padding:15px;
 display:flex;
 justify-content:space-between;
 align-items:center;
+padding:15px 30px;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+header img{
+height:45px;
 }
 
 nav a{
 color:white;
-margin:10px;
+margin-left:20px;
 text-decoration:none;
-font-weight:bold;
+font-size:14px;
 }
 
 .hero{
 height:85vh;
-background:url('lavishvilla.jpg') center/cover no-repeat;
+background:url("lavishvilla.jpg") center/cover;
 display:flex;
 align-items:center;
 justify-content:center;
-color:white;
 text-align:center;
+color:white;
 }
 
 .hero h1{
-font-size:45px;
+font-family:'Playfair Display';
+font-size:52px;
+}
+
+.hero button{
+background:#c8a04c;
+border:none;
+padding:14px 30px;
+color:white;
+font-size:16px;
+margin-top:20px;
+cursor:pointer;
 }
 
 .section{
-padding:60px 20px;
+padding:70px 10%;
+}
+
+.section h2{
 text-align:center;
+font-family:'Playfair Display';
+margin-bottom:40px;
 }
 
 .hotels{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
-padding:20px;
+gap:25px;
 }
 
 .hotel{
 background:white;
 border-radius:10px;
-box-shadow:0 5px 15px rgba(0,0,0,0.2);
-padding:20px;
+overflow:hidden;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
 }
 
-.btn{
-background:#caa23c;
+.hotel img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.hotel h3{
+padding:15px;
+}
+
+.hotel a{
+display:block;
+background:#c8a04c;
 color:white;
-padding:10px 20px;
+text-align:center;
+padding:10px;
 text-decoration:none;
+}
+
+.slider{
+display:flex;
+overflow-x:auto;
+gap:20px;
+}
+
+.slider img{
+height:200px;
+border-radius:10px;
+}
+
+.bookingform{
+max-width:500px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.1);
+}
+
+.bookingform input,select{
+width:100%;
+padding:10px;
+margin-bottom:10px;
+}
+
+.bookingform button{
+background:#c8a04c;
+border:none;
+padding:12px;
+color:white;
+width:100%;
+}
+
+.ota{
+text-align:center;
+}
+
+.ota a{
+background:#111;
+color:white;
+padding:12px 25px;
+margin:5px;
 display:inline-block;
-margin-top:10px;
+text-decoration:none;
 border-radius:5px;
+}
+
+.review{
+background:white;
+padding:20px;
+border-radius:10px;
+margin-bottom:15px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.map iframe{
+width:100%;
+height:300px;
+border:0;
 }
 
 footer{
 background:#111;
 color:white;
-padding:30px;
 text-align:center;
+padding:40px;
 }
 
 .whatsapp{
@@ -90,140 +175,62 @@ right:20px;
 background:#25D366;
 color:white;
 padding:15px;
-border-radius:50px;
+border-radius:50%;
+font-size:22px;
 text-decoration:none;
 }
 
-</style>
-
-</head>
-
-<body>
-
-<header>
-
-<h2>Accuotel Hotels</h2>
-
-<nav>
-
-<a href="#home">Home</a>
+</style></head><body><header><img src="logo.png"><nav>
+<a href="#">Home</a>
 <a href="#hotels">Hotels</a>
-<a href="#location">Location</a>
+<a href="#rooms">Rooms</a>
+<a href="#booking">Book</a>
+<a href="#reviews">Reviews</a>
 <a href="#contact">Contact</a>
-
-</nav>
-
-</header>
-
-<section class="hero" id="home">
-
-<div>
-
-<h1>Luxury Hotels in Indore</h1>
-
-<p>Premium Hospitality Near CHL Hospital Vijay Nagar</p>
-
-<a class="btn" href="https://wa.me/919009690032">Book Now</a>
-
-</div>
-
-</section>
-
-<section class="section" id="hotels">
-
-<h2>Our Hotels</h2>
-
-<div class="hotels">
-
-<div class="hotel">
-
+</nav></header><section class="hero"><div>
+<h1>Luxury Hotel Experience</h1>
+<p>Premium Hospitality Across Indore</p>
+<button onclick="document.getElementById('booking').scrollIntoView()">Book Now</button>
+</div></section><section class="section" id="hotels"><h2>Our Hotels</h2><div class="hotels"><div class="hotel">
+<img src="lavishvilla.jpg">
 <h3>Accuotel Inn Lavish Villa</h3>
-
-<p>Luxury stay near CHL Hospital Vijay Nagar Indore</p>
-
-<a class="btn" href="lavish.html">View Rooms</a>
-
-</div>
-
-<div class="hotel">
-
+<a href="lavish.html">View Hotel</a>
+</div><div class="hotel">
+<img src="lavish1.jpg">
 <h3>Accuotel Inn SVL</h3>
-
-<p>Comfort premium hotel in Vijay Nagar Indore</p>
-
-<a class="btn" href="svl.html">View Rooms</a>
-
-</div>
-
-<div class="hotel">
-
+<a href="#">View Hotel</a>
+</div><div class="hotel">
+<img src="lavish2.jpg">
 <h3>Accuotel Inn Silver Peace</h3>
-
-<p>Budget luxury stay in Indore</p>
-
-<a class="btn" href="silverpeace.html">View Rooms</a>
-
-</div>
-
-<div class="hotel">
-
+<a href="#">View Hotel</a>
+</div><div class="hotel">
+<img src="lavish3.jpg">
 <h3>Accuotel Inn Minakshi</h3>
+<a href="minakshi.html">View Hotel</a>
+</div></div></section><section class="section" id="rooms"><h2>Our Rooms</h2><div class="slider"><img src="lavish1.jpg">
+<img src="lavish2.jpg">
+<img src="lavish3.jpg">
+<img src="lavishvilla.jpg"></div></section><section class="section" id="booking"><h2>Direct Booking</h2><div class="bookingform"><input type="text" placeholder="Guest Name">
+<input type="tel" placeholder="Mobile Number">
+<input type="date"><select>
+<option>Select Hotel</option>
+<option>Lavish Villa</option>
+<option>SVL</option>
+<option>Silver Peace</option>
+<option>Minakshi</option>
+</select><button>Submit Booking</button>
 
-<p>Premium rooms and comfortable stay</p>
+</div></section><section class="section ota"><h2>Book On OTA</h2><a href="https://booking.com">Booking.com</a>
+<a href="https://goibibo.com">Goibibo</a>
+<a href="https://makemytrip.com">MakeMyTrip</a>
 
-<a class="btn" href="minakshi.html">View Rooms</a>
+</section><section class="section" id="reviews"><h2>Guest Reviews</h2><div class="review">
+⭐⭐⭐⭐⭐ Great stay near Vijay Nagar. Clean rooms and friendly staff.
+</div><div class="review">
+⭐⭐⭐⭐⭐ Excellent budget luxury hotel near CHL Hospital.
+</div></section><section class="section map" id="contact"><h2>Our Location</h2><iframe src="https://maps.google.com/maps?q=vijay%20nagar%20indore&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe></section><footer>Accuotel Hotels
+Premium Hotel Chain in Indore
 
-</div>
+</footer><a class="whatsapp" href="https://wa.me/919009690032">💬</a>
 
-</div>
-
-</section>
-
-<section class="section">
-
-<h2>Book On OTA</h2>
-
-<a class="btn" href="#">Booking.com</a>
-<a class="btn" href="#">Goibibo</a>
-<a class="btn" href="#">MakeMyTrip</a>
-
-</section>
-
-<section class="section" id="location">
-
-<h2>Our Location</h2>
-
-<p>Near CHL Hospital Vijay Nagar Indore</p>
-
-<iframe
-src="https://maps.google.com/maps?q=CHL%20Hospital%20Indore&t=&z=13&ie=UTF8&iwloc=&output=embed"
-width="100%"
-height="300"
-style="border:0">
-</iframe>
-
-</section>
-
-<section class="section" id="contact">
-
-<h2>Contact Us</h2>
-
-<p>Phone: 9009690032</p>
-
-<p>Email: info@accuotel.co.in</p>
-
-</section>
-
-<footer>
-
-<h3>Accuotel Hotels</h3>
-
-<p>Premium Hotels in Vijay Nagar Indore</p>
-
-</footer>
-
-<a class="whatsapp" href="https://wa.me/919009690032">WhatsApp</a>
-
-</body>
-
-</html>
+</body></html>
