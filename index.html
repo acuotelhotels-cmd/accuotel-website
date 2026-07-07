@@ -74,8 +74,12 @@ color:#d4af37;
 height:100vh;
 
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.60)),
-url("Perfect1.jpg") center/cover;
+linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.60)),
+url("Perfect1.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+animation: heroSlider 20s infinite;
 
 display:flex;
 
@@ -88,7 +92,31 @@ text-align:center;
 padding:20px;
 
 }
+@keyframes heroSlider{
+  0%,25%{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.60)),
+    url("Perfect1.jpg") center/cover;
+  }
 
+  26%,50%{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.60)),
+    url("lavish1.png") center/cover;
+  }
+
+  51%,75%{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.60)),
+    url("rggrand.jpg") center/cover;
+  }
+
+  76%,100%{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.60)),
+    url("svl1.jpg") center/cover;
+  }
+}
 .hero-content{
 
 max-width:850px;
